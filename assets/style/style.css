@@ -1,0 +1,533 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: "Rubik";
+    src: url("../fonts/Rubik-Medium.ttf");
+}
+*{
+    font-family: "Rubik";
+}
+li{
+    list-style-type: none;
+}
+header{
+    width: 80%;
+    padding: 0 10%;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    height: 15vh;
+    align-items: center;
+
+    background-color: rgb(223, 217, 205);
+}
+.logo img{
+    width: 50%;
+}
+.navigator1 ul{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    font-size: 14px;
+    text-align: center;
+}
+.navigator1 ul a{
+    color: black;
+    text-decoration: none;
+}
+.navigator2{
+    margin-left: auto;
+}
+.navigator2 img{
+    padding-left: 15px;
+}
+#main_page{
+    background-image: url(../img/col.svg);
+    background-repeat: repeat-x;
+    background-position: 50%, 0%;
+    width: 100%;
+    height: 85vh;
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+
+    background-color: rgb(223, 217, 205);
+}
+#main_page .star img{
+    margin-left: auto;
+    width: 100%;
+    padding-top: 40vh;
+}
+#main_page .text{
+    text-align: center;
+    padding-top: 28vh;
+}
+#main_page .text p.title1{
+    font-size: 70px;
+    font-weight: bold;
+}
+#main_page .text p.title2{
+    font-size: 70px;
+    font-weight: bold;
+    color: rgb(95, 193, 206);
+}
+#main_page .text p.signature{
+    font-size: 15px;
+    padding: 5vh 0;
+}
+#main_page .text button{
+    font-size: 18px;
+    padding: 10px 25px;
+    cursor: pointer;
+
+    background-color: rgb(218, 99, 56);
+    color: white;
+    border: none;
+    border-radius: 15px;
+}
+#main_page .flower img{
+    padding-top: 13vh;
+    margin-left: auto;
+    width: 100%;
+}
+#about_us{
+    width: 80%;
+    padding: 10vh 10%;
+}
+#about_us .info{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 10%;
+    padding-bottom: 8vh;
+}
+#about_us .info .text{
+    width: 100%;
+}
+#about_us .info .text p.title{
+    font-size: 60px;
+    font-weight: bold;
+    padding-bottom: 3vh;
+}
+#about_us .info .text p.text{
+    font-size: 16px;
+    margin-bottom: 1em;
+    line-height: 1.5;
+}
+#about_us .info img{
+    width: 100%;
+}
+.for_whom{
+    width: 100%;
+}
+.for_whom ul{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.for_whom ul li{
+    padding: 30px;
+    border-radius: 50px;
+    margin: 5%;
+}
+.for_whom ul li.for_children{
+    background-color: rgba(255, 192, 203, 0.5);
+}
+.for_whom ul li.for_adults{
+    background-color: rgba(192, 248, 255, 0.5);
+}
+.for_whom ul li.for_family{
+    background-color: rgba(255, 226, 192, 0.75);
+}
+.for_whom ul li img{ 
+    height: 30vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.for_whom ul li p.for{
+    font-size: 24px;
+    font-weight: bold; 
+}
+.for_whom ul li p.signature{
+    font-size: 16px;
+    padding: 10px 0; 
+}
+#bingo_bingo{
+    width: 90%;
+    padding: 10vh 5%;
+    background-color: rgb(223, 217, 205);
+    border-radius: 100px;
+}
+#bingo_bingo p.title{
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+}
+#bingo_bingo p.signature{
+    font-size: 16px;
+    text-align: center;
+    padding: 3vh 30% 6vh 30%;
+}
+#bingo_bingo ul{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    align-items: center;
+}
+#bingo_bingo ul li{
+    position: relative;
+    margin: 3%;
+}
+#bingo_bingo ul li img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#bingo_bingo ul li p{
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#favorite_games{
+    width: 80%;
+    padding: 10vh 10%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 10%;
+}
+#favorite_games p.title{
+    font-size: 60px;
+    font-weight: bold;
+    padding-top: 25vh;
+}
+#favorite_games .pictures{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 5%;
+}
+#favorite_games .pictures p{
+    font-size: 19px;
+    font-weight: bold;
+    text-align: center;
+}
+#favorite_games .pictures .dino{
+    grid-column: 1 / span 2;
+    margin-bottom: 3vh;
+
+    width: 100%;
+    height: 35vh;
+    background-color: rgb(223, 217, 205);
+    border-radius: 30px 30px 30px 50%;
+    position: relative;
+}
+#favorite_games .pictures .dino img{
+    width: 100%;
+    height: 35vh;
+    border-radius: 0 0 0 50%;
+}
+#favorite_games .pictures .dino p{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#favorite_games .pictures .riches{
+    width: 100%;
+    height: 30vh;
+    background-color: rgb(223, 217, 205);
+    border-radius: 100%;
+    position: relative;
+}
+#favorite_games .pictures .riches img{
+    width: 100%;
+    height: 30vh;
+}
+#favorite_games .pictures .riches p{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#favorite_games .pictures .Joe{
+    width: 100%;
+    height: 30vh;
+    background-color: rgb(223, 217, 205);
+    border-radius: 50px;
+    position: relative;
+}
+#favorite_games .pictures .Joe img{
+    width: 100%;
+    height: 30vh;
+}
+#favorite_games .pictures .Joe p{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#sale{
+    width: 40%;
+    padding: 20vh 50% 15vh 10%;
+    background-image: url(../img/photo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: grid;
+    grid-template-columns: 25% 75%;
+}
+#sale p.title{
+    font-size: 60px;
+    font-weight: bold;
+}
+#sale p.signature{
+    font-size: 18px;
+    padding: 2vh 0 4vh 0;
+}
+#sale button{
+    font-size: 18px;
+    padding: 10px 25px;
+    cursor: pointer;
+
+    background-color: rgb(218, 99, 56);
+    color: white;
+    border: none;
+    border-radius: 15px;
+}
+#city{
+    width: 80%;
+    padding: 10vh 10%;
+}
+#city .game{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 5%;
+}
+#city .game .img_city{
+    border-radius: 30px;
+}
+#city .game .info .top{
+    display: grid;
+    grid-template-columns: 40% 30% 30%;
+}
+#city .game .info .top .mounth{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    column-gap: 5%;
+    align-items: center;
+    padding: 10px 15px;
+
+    border-radius: 10px;
+    background-color: rgba(192, 248, 255, 0.5);
+}
+#city .game .info .top .rating{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    column-gap: 10%;
+    height: 5vh;
+    align-items: center;
+    margin-left: 10%;
+}
+#city .game .info .top .rating img{
+    width: 100%;
+}
+#city .game .info p.title{
+    font-size: 60px;
+    font-weight: bold;
+    padding-top: 4vh;
+}
+#city .game .info p.text{
+    padding-top: 4vh;
+}
+#city .game .info ul{
+    display: grid;
+    grid-template-columns: 40% 30% 30%;
+    align-items: center;
+}
+#city .game .info ul li{
+    display: grid;
+    grid-template-columns: 10% 90%;
+    column-gap: 3%;
+    align-items: center;
+}
+#city .game .info ul li.hihi{
+    padding: 0 5%;
+}
+#city .game .info ul li p{
+    font-size: 14px;
+    padding-top: 4vh;
+}
+#city .game .info ul li img{
+    padding-top: 4vh;
+}
+#city .game .info .price{
+    display: grid;
+    grid-template-columns: 27.5% 45% 8.5%;
+    column-gap: 10%;
+    align-items: center;
+}
+#city .game .info .price p{
+    font-size: 36px;
+    padding-top: 4vh;
+}
+#city .game .info .price button{
+    font-size: 16px;
+    padding: 10px 25px;
+    cursor: pointer;
+
+    background-color: rgb(218, 99, 56);
+    color: white;
+    border: none;
+    border-radius: 15px;
+
+    margin-top: 4vh;
+}
+#city .discription{
+    padding-top: 4vh;
+    width: 50%;
+}
+#city .discription ul{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    background-color: rgb(235, 232, 228);
+    border-radius: 15px;
+    padding: 5px;
+    text-align: center;
+    align-items: center;
+    height: 5vh;
+}
+#city .discription ul li p{
+    font-size: 16px;
+    font-weight: bold;
+}
+#city .discription ul li.y{
+    width: auto;
+    height: 5vh;
+    border-radius: 15px;
+    background-color: rgb(238, 207, 107);
+    align-items: center;
+}
+#city .discription ul li.y p{
+    padding-top: 10px;
+}
+#city .discription p.text{
+    padding-top: 4vh;
+    font-size: 16px;
+    line-height: 1.5;
+}
+#city .discription p.text2{
+    padding-top: 2vh;
+    font-size: 16px;
+    line-height: 1.5;
+}
+#octouber{
+    width: 80%;
+    padding: 10vh 10% 25vh 10%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 10%;
+}
+#octouber .info p.title{
+    font-size: 60px;
+    font-weight: bold;
+}
+#octouber .info p.text{
+    padding: 4vh 0;
+}
+.info .prikoli{
+    position: relative;
+    height: 25vh;
+}
+.prikoli .flower img{
+    position: absolute;
+    top: 50%;
+}
+.prikoli .flower p{
+    position: absolute;
+    top: 87%;
+    left: 16%;
+    transform: translate(-50%, -50%);
+}
+.prikoli .fire img{
+    position: absolute;
+    left: 32%;
+}
+.prikoli .fire p{
+    position: absolute;
+    top: 52%;
+    left: 47%;
+    transform: translate(-50%, -50%);
+}
+.prikoli .rhomb img{
+    position: absolute;
+    left: 65%;
+    top: 50%;
+}
+.prikoli .rhomb p{
+    position: absolute;
+    top: 78%;
+    left: 81%;
+    transform: translate(-50%, -50%);
+}
+.prikoli .arrow img{
+    position: absolute;
+    left: 20%;
+    top: 100%;
+}
+.prikoli .arrow p{
+    position: absolute;
+    top: 130%;
+    left: 32%;
+    transform: translate(-50%, -50%);
+    transform:rotate(-14deg);
+}
+#octouber .user_data .user_info p{
+    font-size: 12px;
+}
+#octouber .user_data .user_info input{
+    width: 100%;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 1vh 0 3vh 0;
+}
+#octouber .user_data .btn p{
+    font-size: 16px;
+}
+#octouber .user_data .btn ul{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 1vh 0 3vh 0;
+}
+#octouber .user_data .btn button{
+    font-size: 16px;
+    padding: 10px 25px;
+    cursor: pointer;
+
+    background-color: rgb(218, 99, 56);
+    color: white;
+    border: none;
+    border-radius: 15px;
+
+    margin-top: 4vh;
+}
+footer{
+    width: 80%;
+    padding: 6vh 10%;
+    background-color: rgb(235, 232, 228);
+}
+footer p{
+    font-size: 12px;
+}
+footer p.polit{
+    font-size: 12px;
+    text-align: end;
+    text-decoration: underline;
+    cursor: pointer;
+}
+footer ul{
+    display: grid;
+    grid-template-columns: 45% 10% 45%;
+    align-items: center;
+
+}
